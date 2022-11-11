@@ -38,10 +38,10 @@ def fillMatrix(strings):
 
     return matrix
 
-def parseMap():
+def parseMap(path= FILEPATH):
 
 
-    file = open(FILEPATH, "r")
+    file = open(path, "r")
     content = file.read()
     file.close()
 
@@ -50,6 +50,8 @@ def parseMap():
     mapMatrix = fillMatrix(strings)
 
     return mapMatrix
+
+
 
 
 
